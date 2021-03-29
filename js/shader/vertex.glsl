@@ -85,9 +85,18 @@ void main() {
 
   // newposition.z += 0.1 * cnoise(vec3(position.x * 4., position.y * 4. + time/5., 0.));
 
-  float noise = cnoise(vec3(position.x * 4., position.y * 4. + time/5., 0.));
-  newposition.z += 0.2 * noise;
-  
+  // float noise = cnoise(vec3(position.x * 4., position.y * 4. + time/5., 0.));
+  // newposition.z += 0.2 * noise;
+
+  // float dist = distance(uv, vec2(0.5)); 
+  // newposition.z += 0.2 * sin(dist * 20. + time);
+  // newposition.z += 0.05 * sin(dist * 40. + time);
+
+  //Sphere
+  float noise = cnoise(3. * vec3(position.x, position.y, position.z + time/10.));
+  newposition += 0.05 * normal * noise; // normal lengths
+
+  // vNoise = dist;
   vNoise = noise;
   vUv = uv;
 
