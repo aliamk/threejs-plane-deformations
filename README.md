@@ -1,5 +1,6 @@
-## Sphere with short normals, few vertices and spread apart
-## On mouseOver, ON logo transforms into this
+### On mouseOver, ON logo transforms into these
+
+#### Sphere with short normals, few vertices and spread apart
 ![sphere_short_normals_time_low_vertex_distance](https://user-images.githubusercontent.com/63723832/112905528-7a12e780-90e2-11eb-819c-b130135b8586.gif)
 
 
