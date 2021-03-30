@@ -14,7 +14,7 @@ void main()	{
 	vec2 newUV = vUv;
 	newUV = vec2(newUV.x, newUV.y + 0.01 * sin(newUV.x * 10. + time));
 	vec4 onLogo = texture2D(onTexture, vUv);
-
+	//
 	gl_FragColor = vec4(finalColor, 1.);
 	gl_FragColor = vec4(vUv, 0., 1.);
 	gl_FragColor = onLogo;

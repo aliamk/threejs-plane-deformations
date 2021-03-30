@@ -95,7 +95,7 @@ void main() {
   //Sphere
   float noise = cnoise(3. * vec3(position.x, position.y, position.z + time/10.));
   newposition += 0.05 * normal * noise; // normal lengths
-
+  //
   // vNoise = dist;
   vNoise = noise;
   vUv = uv;
